@@ -1,0 +1,64 @@
+@import './../variables.scss';
+.Slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    .Slider-Wrapper {
+        height: 100vh;
+        -webkit-transition: .5s all linear;
+        transition: .5s all linear;
+        will-change: transform;
+    }
+    .Slider-DotsContainer {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        right: 65px;
+        bottom: 60px;
+        transform: translateX(-50%);
+        z-index: 10;
+        list-style-type: none;
+        font-size: 1.85em;
+        li {
+            display: inline-block;
+            padding: 18px;
+            &.Dots_active {
+                a {
+                    color: $color-blue;
+                }
+            }
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+                    opacity: .7;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .Slider-EachSlide {
+        width: 100vw;
+        height: 100vh;
+        float: left;
+        line-height: 100vh;
+        font-size: 40vh;
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1900px){
+    .Slider {
+        .Slider-DotsContainer {
+            font-size: 1.2em;
+            right: 0;
+            bottom: 30px;
+        }
+    }
+}

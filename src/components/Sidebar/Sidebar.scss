@@ -1,0 +1,32 @@
+@import './../variables.scss';
+.Sidebar {
+    position: absolute;
+    z-index: 3;
+    width: 6%;
+    height: 100%;
+    background-color: $color-white;
+    -webkit-box-shadow: 5px 0px 56px 0px #ececec;
+    -moz-box-shadow: 5px 0px 56px 0px #ececec;
+    box-shadow: 5px 0px 56px 0px #ececec;
+    text-align: center;
+    .Sidebar-Logo {
+        width: 35px;
+        height: 35px;
+        padding-top: 28px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Sidebar-Navigation {
+        margin-top: 125px;
+        padding: 0;
+    }
+}
+
+.Navigation {
+    list-style: none;
+}
+
+.Navigation-Item {
+    cursor: pointer;
+    padding-bottom: 70px;
+}

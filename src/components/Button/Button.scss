@@ -1,0 +1,16 @@
+@import './../variables.scss';
+
+.Button {
+    cursor: pointer;
+    height: 45px;
+    background-color: $color-blue;
+    font-family: "Lato";
+    font-weight: 900;
+    color: #fff;
+    outline: none;
+    padding: 0px 43px;
+    border-radius: 38px;
+    font-size: 1.02em;
+    margin-top: 6px;
+
+}

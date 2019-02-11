@@ -4,24 +4,12 @@ import { NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 import { cn } from '@bem-react/classname';
 import logo from '../../assets/logo.png';
-import home from '../../assets/homepage.svg';
-import cart from '../../assets/cart.svg';
-import cartActive from '../../assets/cart-active.svg';
 
-import search from '../../assets/search.png';
 const sidebar = cn('Sidebar');
 const navigation = cn('Navigation');
 
 class Sidebar extends Component {
-    constructor(props) {
-        super(props)
-        this.handler = this.handler.bind(this)
-    }
-    handler(e) {
-        console.log(e.target.parentNode);
-        console.log(e.target.parentNode.className === 'activeLink');
 
-    }
     _renderHomeIcon() {
         return (
             <svg height="34px" version="1.1" viewBox="0 0 24 24" width="34px" xmlns="http://www.w3.org/2000/svg">

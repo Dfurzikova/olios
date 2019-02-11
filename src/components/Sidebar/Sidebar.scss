@@ -28,5 +28,10 @@
 
 .Navigation-Item {
     cursor: pointer;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    .activeLink svg{
+        path {
+            stroke: $color-blue;
+        }
+    }
 }

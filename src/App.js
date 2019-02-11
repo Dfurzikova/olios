@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./components/Home/Home";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Cart from './components/Cart/Cart';
 
 class App extends Component {
     render() {
@@ -11,8 +12,8 @@ class App extends Component {
                     <Sidebar />
                     <Switch>
                         <Route path="/" component={Home} exact />
-                        {/* <Route path="/basket" component={Basket} />
-                        <Route path="/search" component={search} />
+                        <Route path="/Cart" component={Cart} />
+                        {/* <Route path="/search" component={search} />
                         <Route component={Error} /> */}
                     </Switch>
                 </div>

@@ -1,0 +1,13 @@
+@import './../variables.scss';
+
+.Content{
+    max-width: 1320px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.Content-Title {
+    font-weight: 300;
+    padding-top: 84px;
+    font-size: 3em;
+    margin: 0;
+}

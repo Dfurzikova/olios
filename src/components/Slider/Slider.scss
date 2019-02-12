@@ -5,13 +5,13 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    .Slider-Wrapper {
+    &-Wrapper {
         height: 100vh;
         -webkit-transition: .5s all linear;
         transition: .5s all linear;
         will-change: transform;
     }
-    .Slider-DotsContainer {
+    &-DotsContainer {
         margin: 0;
         padding: 0;
         position: absolute;
@@ -40,7 +40,7 @@
             }
         }
     }
-    .Slider-EachSlide {
+    &-EachSlide {
         width: 100vw;
         height: 100vh;
         float: left;
@@ -51,11 +51,8 @@
         background-position: center center;
         background-color: transparent;
     }
-}
-
-@media screen and (max-width: 1900px){
-    .Slider {
-        .Slider-DotsContainer {
+    @media screen and (max-width: 1900px) {
+        &-DotsContainer {
             font-size: 1.2em;
             right: 0;
             bottom: 30px;

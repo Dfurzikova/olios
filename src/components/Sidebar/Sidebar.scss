@@ -1,4 +1,5 @@
 @import './../variables.scss';
+
 .Sidebar {
     position: absolute;
     z-index: 3;
@@ -9,14 +10,16 @@
     -moz-box-shadow: 5px 0px 56px 0px #ececec;
     box-shadow: 5px 0px 56px 0px #ececec;
     text-align: center;
-    .Sidebar-Logo {
+
+    &-Logo {
         width: 35px;
         height: 35px;
         padding-top: 28px;
         text-align: center;
         margin: 0 auto;
     }
-    .Sidebar-Navigation {
+
+    &-Navigation {
         margin-top: 125px;
         padding: 0;
     }
@@ -29,7 +32,8 @@
 .Navigation-Item {
     cursor: pointer;
     margin-bottom: 70px;
-    .activeLink svg{
+
+    .activeLink svg {
         path {
             stroke: $color-blue;
         }

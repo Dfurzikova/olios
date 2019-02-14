@@ -2,13 +2,23 @@
 
 .Button {
     cursor: pointer;
-    height: 45px;
-    background-color: $color-blue;
     font-family: "Lato";
     font-weight: 900;
-    color: #fff;
     outline: none;
-    padding: 0px 43px;
-    border-radius: 38px;
-    font-size: 1.02em;
+
+    &_color {
+        height: 45px;
+        background-color: $color-blue;
+        color: #fff;
+        padding: 0px 43px;
+        border-radius: 38px;
+        font-size: 1.02em;
+    }
+    &_icon {
+        height: 28px;
+        width: 28px;
+        background-repeat: no-repeat;
+        border: none;
+        box-sizing: border-box;
+    }
 }

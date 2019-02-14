@@ -12,16 +12,16 @@
         will-change: transform;
     }
     &-DotsContainer {
+        font-size: 1.2em;
+        right: 0;
+        bottom: 30px;
         margin: 0;
         padding: 0;
         position: absolute;
         text-align: center;
-        right: 65px;
-        bottom: 60px;
         transform: translateX(-50%);
         z-index: 10;
         list-style-type: none;
-        font-size: 1.85em;
         li {
             display: inline-block;
             padding: 18px;
@@ -51,11 +51,11 @@
         background-position: center center;
         background-color: transparent;
     }
-    @media screen and (max-width: 1900px) {
+    @media screen and (min-width: 1900px) {
         &-DotsContainer {
-            font-size: 1.2em;
-            right: 0;
-            bottom: 30px;
+            right: 65px;
+            bottom: 60px;
+            font-size: 1.85em;
         }
     }
 }

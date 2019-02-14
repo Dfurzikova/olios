@@ -1,0 +1,20 @@
+@import './../variables.scss';
+
+.SearchInput {
+    height: 150px;
+    $widthFull: 100%;
+    width: calc(100% - 16px);
+    font-size: 7em;
+    padding-left: 15px;
+    outline: none;
+    border-bottom: 2px solid $color-grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    &-Button {
+        position: absolute;
+        right: 0;
+        bottom: 125px;
+    }
+}

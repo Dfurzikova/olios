@@ -1,0 +1,14 @@
+@import './../variables.scss';
+
+.Search{
+ &-Input {
+    margin-top: 127px;
+    position: relative;
+ }
+ &-Legend {
+     color: #b3b3b3;
+     font-size: 2em;
+     font-weight: 300;
+     padding-top: 25px;
+ }
+}

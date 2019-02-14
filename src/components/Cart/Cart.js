@@ -9,8 +9,8 @@ class Cart extends Component {
     render() {
         return (
             <div className={cart()}>
-                <div className={content()}>
-                <h1 className={content('Title')}>CART</h1>
+                <div className={cart('Content', ['Content']) }>
+                <h1 className={cart('ContentTitle')}>CART</h1>
                 </div>
             </div>
         )

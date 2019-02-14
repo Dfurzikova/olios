@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.scss';
-import Hamburger from '../Hamburger/Hamburger';
+// import Hamburger from '../Hamburger/Hamburger';
 import Button from '../Button/Button';
 import Slider from '../Slider/Slider';
 
@@ -16,10 +16,8 @@ class Home extends Component {
                         <h1 className={home('BackgroundText')}>NEWEST</h1>
                         <h2 className={home('Title')}>OLIOS</h2>
                         <h2 className={home('Subtitle')}>NEWEST FURNITURE SHOP TEMPLATE</h2>
-                        <Button className={home('Button')} name="VIEW MORE" />
+                        <Button className={home('Button', ['Button_color'])} name="VIEW MORE" />
                     </div>
-                    <Hamburger />
-
                 </Slider>
             </div>
         )

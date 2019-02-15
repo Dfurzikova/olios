@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { cn } from '@bem-react/classname';
 import './Cart.scss';
 const cart = cn('Cart');
-const content = cn('Content');
 
 class Cart extends Component {
     render() {

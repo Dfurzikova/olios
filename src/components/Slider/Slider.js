@@ -32,9 +32,12 @@ class Slider extends Component {
 
         if (this.state.active === this.state.max - 1) {
 
-            this.state.active = 0;
+            this.setState({
+                active: 0
+            })
 
         } else {
+
             this.state.active++;
         }
 

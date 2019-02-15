@@ -1,0 +1,30 @@
+@import './../variables.scss';
+.Menu {
+    width: 16%;
+    height: 100vh;
+    background-color: $color-white;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    box-shadow: -5px 0px 56px 0px #ececec;
+    &-Categories {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+
+    }
+    &-Item {
+        margin-bottom: 35px;
+        line-height: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-Title {
+        display: inline-block;
+        color: $color-darkGrey;
+        padding-right: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

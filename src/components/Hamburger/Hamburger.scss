@@ -1,4 +1,11 @@
 @import './../variables.scss';
+$transition-time: 0.4s;
+$rotation: 45deg;
+$line-spacing: 0.8em;
+$translateY: ($line-spacing / 2);
+$translateX: 0;
+$line-width: 20px;
+
 .Hamburger {
     cursor: pointer;
     width: 74px;
@@ -13,20 +20,50 @@
     box-shadow: 0px 0px 65px -20px grey;
     -webkit-box-shadow: 0px 0px 65px -20px grey;
     -moz-box-shadow: 0px 0px 65px -20px grey;
-
     display: flex;
     justify-content: center;
     align-items: center;
     &-Lines {
+        height: $line-spacing;
+        width: $line-width;
         list-style: none;
         padding: 0;
-
+        position: relative;
     }
     &-Line {
-        width: 15px;
+        position: absolute;
+        width: $line-width;
         height: 3px;
         background-color: $color-blue;
         margin: 0 auto;
-        margin-top: 3px;
+        transition: all $transition-time;
+        -webkit-transition: all $transition-time;
+        -moz-transition: all $transition-time;
+    }
+    &-Line_1 {
+        top: 0;
+    }
+    &-Line_2 {
+        top: 50%;
+    }
+    &-Line_3 {
+        top: 100%;
+    }
+
+    &.active {
+        .Hamburger-Line_1 {
+            transform: translateY($translateY) translateX($translateX) rotate($rotation);
+            -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+            -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+        }
+        .Hamburger-Line_2 {
+            opacity: 0;
+        }
+        .Hamburger-Line_3 {
+            transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+            -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1) ;
+            -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+        }
     }
 }
+

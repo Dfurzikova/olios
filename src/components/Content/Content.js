@@ -31,7 +31,7 @@ class Content extends Component {
                     <div className={card('Info')}>
                         <div className={card('Title')}>{item.title.toUpperCase()}</div>
                         <div className={card('Description')}>{item.description}</div>
-                        <div className={card('Price')}>{item.discountPrice}</div>
+                        <div className={card('Price')}>{item.currentPrice}</div>
                     </div>
              </NavLink>
             )

@@ -1,19 +1,146 @@
 @import './../variables.scss';
 .Content{
-    max-width: 980px;
-    height: 100vh;
-    margin: 0 auto;
-    padding-top: 84px;
 
+    background-color: $background;
+    &-Wrapper{
+        max-width: 980px;
+        height: 100vh;
+        margin: 0 auto;
+    }
     &-Title {
         font-weight: 300;
         font-size: 3em;
         margin: 0;
+        padding: 40px 0 30px 0;
+    }
+    &-ProductCards {
+        display: grid;
+        grid-template-columns: repeat(4, 230px);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+        grid-auto-flow: dense;
     }
 
+
+    @media screen and (min-width: 1900px) {
+        &-Wrapper {
+            max-width: 1320px;
+        }
+        &-Title {
+            padding: 70px 0 50px 35px;
+        }
+        &-ProductCards {
+            grid-template-columns: repeat(4, 287px);
+            grid-gap: 34px;
+            margin: 0 35px;
+        }
+    }
+}
+
+
+
+.Card {
+    background-color: $color-white;
+    height: 260px;
+    text-decoration: none;
+
+    &-Description{
+        color: $color-darkGrey;
+        font-size: 0.85em;
+    }
+    &-Price {
+        color: $color-blue;
+        font-weight: 800;
+        padding-top: 10px;
+    }
+    &-Title {
+        color: #000;
+    }
+
+    &_size_s{
+        position: relative;
+        width: 230px;
+        grid-column: span 1;
+        grid-row: auto;
+        .Card-Info {
+            padding: 15px 20px;
+            position: absolute;
+            bottom: 0;
+        }
+        .Card-Image{
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+    }
+    &_size_m{
+        width: 480px;
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        .Card-Image{
+            width: 230px;
+            padding: 0 25px;
+        }
+    }
+    &_size_l{
+        width: 730px;
+        grid-column: span 3;
+        display: flex;
+        align-items: center;
+
+        .Card-Image{
+            width: 375px;
+            height: 225px;
+            padding: 0 40px;
+        }
+        .Card-Price {
+            margin-top: 10px;
+        }
+    }
     @media screen and (min-width: 1900px) {
         & {
-            max-width: 1320px;
+            height: 350px;
+
+        }
+        &-Title {
+            font-size: 1.5em;
+        }
+        &-Description {
+            font-size: 1.1em;
+        }
+        &-Price {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        &_size_s {
+            width: 287px;
+            .Card-Image{
+                width: 170px;
+                height: 170px;
+                padding: 45px 0;
+            }
+
+
+        }
+        &_size_m{
+            width: 607px;
+            .Card-Image{
+                width: 320px;
+            }
+        }
+        &_size_l{
+            width: 927px;
+            .Card-Image{
+                width: 500px;
+                height: 300px;
+            }
+            .Card-Price {
+                margin-top: 30px;
+            }
         }
     }
 }

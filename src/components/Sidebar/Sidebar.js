@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 import { cn } from '@bem-react/classname';
-import logo from '../../assets/logo.png';
 
 const sidebar = cn('Sidebar');
 const navigation = cn('Navigation');
@@ -30,7 +29,7 @@ class Sidebar extends Component {
     render() {
         return (
             <div className={sidebar()}>
-                <NavLink to='/'> <img src={logo} className={sidebar('Logo')} /></NavLink>
+                <NavLink to='/'> <img src='/assets/logo.png' className={sidebar('Logo')} /></NavLink>
                 <ul className={navigation('', ['Sidebar-Navigation'])} >
                     <li className={navigation('Item')} >
                         <NavLink exact to='/' activeClassName='activeLink'> {Sidebar._renderIcon('home')}</NavLink>

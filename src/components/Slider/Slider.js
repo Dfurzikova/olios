@@ -9,10 +9,10 @@ class Slider extends Component {
         this.state = {
             slides: [
                 {
-                    currentSlide: `url(${require('../../assets/background-1.jpg')})`
+                    currentSlide:  `url('/assets/background-1.jpg')`
                 },
                 {
-                    currentSlide: `url(${require('../../assets/background-2.jpg')})`
+                    currentSlide: `url('/assets/background-2.jpg')`
                 }
             ],
             active: 0,

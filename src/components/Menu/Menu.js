@@ -6,11 +6,11 @@ import './Menu.scss';
 const menu = cn('Menu');
 
 const data = {
-    living: ['LIVING ROOM', require('../../assets/living.svg')],
-    office: [ 'OFFICE', require('../../assets/office.svg')],
-    kids: ['FOR KIDS', require('../../assets/kids.svg')],
-    kitchen: ['KITCHEN', require('../../assets/kitchen.svg')],
-    accesories: ['ACCESORIES',require('../../assets/accesories.svg')]
+    living: ['LIVING ROOM', '/assets/living.svg'],
+    office: [ 'OFFICE', '/assets/office.svg'],
+    kids: ['FOR KIDS', '/assets/kids.svg'],
+    kitchen: ['KITCHEN', '/assets/kitchen.svg'],
+    accesories: ['ACCESORIES', '/assets/accesories.svg']
 }
 
 class Menu extends Component {
@@ -28,7 +28,7 @@ class Menu extends Component {
             <div className={menu()}>
                 <ul className={menu('Categories')} >
                     <li className={menu('Item')} >
-                        <NavLink to='/living' activeClassName='activeCat'> {Menu._renderCategory('living')}</NavLink>
+                        <NavLink to='/living' activeClassName='activeCat' > {Menu._renderCategory('living')}</NavLink>
                     </li>
                     <li className={menu('Item')}>
                         <NavLink to='/office' activeClassName='activeCat'> {Menu._renderCategory('office')}</NavLink>

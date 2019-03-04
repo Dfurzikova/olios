@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SearchInput.scss';
 import { cn } from '@bem-react/classname';
-import cross from '../../assets/cross.svg'
+// import cross from '../../assets/cross.svg'
 import Button from '../Button/Button'
 
 const searchinput = cn('SearchInput');
@@ -24,7 +24,7 @@ class SearchInput extends Component {
         return (
             <React.Fragment>
                 <input className={searchinput()} type="text" value={this.state.value} onChange={this.inputHandler} />
-                <Button onClick={this.clearInput} className={searchinput('Button', ['Button_icon'])} backgroundImage={cross} />
+                <Button onClick={this.clearInput} className={searchinput('Button', ['Button_icon'])} backgroundImage={'/assets/cross.svg'} />
             </React.Fragment>
         )
     }

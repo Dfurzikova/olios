@@ -1,7 +1,7 @@
 @import './../variables.scss';
 .Product{
     display: flex;
-    // padding-top: 40px;
+
     &-Info {
         padding: 40px 0 0 40px;
     }
@@ -10,7 +10,7 @@
         font-weight: 300;
         display: inline-block;
     }
-    &-Title{
+    &-Title {
         color: $color-blue;
     }
     &-Description {
@@ -26,6 +26,18 @@
     }
     &-Quantity {
         margin-left: 40px;
+    }
+
+    @media screen and (min-width: 1900px) {
+        &-Info {
+            padding: 40px 0 0 125px;
+        }
+        &-Title, &-Category {
+            font-size: 2em;
+        }
+        &-Description {
+            font-size: 1.5em;
+        }
     }
 }
 

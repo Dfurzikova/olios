@@ -31,4 +31,10 @@
     &-Button {
         margin-left: 20px;
     }
+
+    @media screen and (min-width: 1900px) {
+        &-Title{
+            font-size: 1.2em;
+        }
+    }
 }

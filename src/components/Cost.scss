@@ -18,4 +18,14 @@
         font-size: 1.2em;
         margin-left: 10px;
     }
+
+    @media screen and (min-width: 1900px) {
+        &-Title {
+            font-size: 1.2em;
+        }
+        &-PriceStrikeout {
+            font-size: 1.5em;
+        }
+
+    }
 }

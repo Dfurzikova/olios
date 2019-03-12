@@ -1,7 +1,9 @@
 @import './../variables.scss';
 .Content{
 
-    background-color: $background;
+    &_theme_grey {
+        background-color: $background;
+    }
     &-Wrapper{
         max-width: 980px;
         height: 100vh;
@@ -20,7 +22,9 @@
         grid-gap: 20px;
         grid-auto-flow: dense;
     }
-
+    &-Product {
+        padding-top: 40px;
+    }
 
     @media screen and (min-width: 1900px) {
         &-Wrapper {
@@ -36,7 +40,6 @@
         }
     }
 }
-
 
 
 .Card {
@@ -56,6 +59,7 @@
     &-Title {
         color: #000;
     }
+
 
     &_size_s{
         position: relative;

@@ -1,0 +1,21 @@
+@import './variables.scss';
+.Cost{
+    &-Title {
+        font-size: 0.8em;
+        display: block;
+        padding-bottom: 7px;
+    }
+    &-Price {
+        color: $color-blue;
+        font-size: 2em;
+        display: inline;
+        font-weight: 800;
+    }
+    &-PriceStrikeout {
+        display: inline;
+        font-weight: 800;
+        text-decoration: line-through;
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+}

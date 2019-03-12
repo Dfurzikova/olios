@@ -1,0 +1,34 @@
+@import './variables.scss';
+.Quantity{
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+
+    &-Title {
+        font-size: 0.8em;
+        display: block;
+    }
+    &-Select {
+        margin-top: 8px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none !important;
+        height: 45px;
+        width: 70px;
+        border-radius: 50px;
+        outline: none;
+        font-size: 1.3em;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        background-position-x: 40px;
+        background-position-y: center;
+    }
+    &-Block {
+        display: inline-block;
+    }
+    &-Button {
+        margin-left: 50px;
+    }
+}

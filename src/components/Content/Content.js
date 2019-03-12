@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { cn } from '@bem-react/classname';
 import './Content.scss';
 import data from '../../data.json'
@@ -26,14 +25,16 @@ class Content extends Component {
 
 
             return (
-                <NavLink to={'/'+ `${item.article}`}  key={index} className={card('', ['Card_size_' + item.size])} >
+                <Link to={'/'+ `${item.type}` + '/' + `${item.article}`}  key={index} className={card('', ['Card_size_' + item.size])} >
+
                     <img className={card('Image')}  src={item.preview}/>
                     <div className={card('Info')}>
                         <div className={card('Title')}>{item.title.toUpperCase()}</div>
                         <div className={card('Description')}>{item.description}</div>
                         <div className={card('Price')}>{item.currentPrice}</div>
                     </div>
-             </NavLink>
+             </Link>
+
             )
         })
 
@@ -42,12 +43,12 @@ class Content extends Component {
     render() {
 
         return (
-            <div className={content()}>
+            <div className={content('', ['Content_theme_grey'])}>
             <div className={content('Wrapper')}>
                 <h1 className={content('Title')}>PRODUCTS</h1>
                 <div className={content('ProductCards')}>
 
-                {this.renderProducts()}
+                 {this.renderProducts()}
                 </div>
             </div>
             </div>
